@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindCare AI - 24/7 Mental Health Support</title>
+    <link rel="stylesheet" href="ai.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <h2>MindCare AI</h2>
+                </div>
+                <nav class="header__nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#ai-chat" class="nav-link">AI Chat</a>
+                    <a href="#resources" class="nav-link">Resources</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+                <button class="btn btn--primary header__cta" id="emergency-btn">Get Help Now</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">AI-Powered Mental Health Support - Available 24/7</h1>
+                <p class="hero__subtitle">Get personalized mental health support through our advanced AI technology, combined with professional care</p>
+                <div class="hero__actions">
+                    <button class="btn btn--primary btn--lg" id="start-chat-btn">Start AI Chat</button>
+                    <button class="btn btn--outline btn--lg" id="book-consultation-btn">Book Consultation</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our AI-Powered Services</h2>
+            <div class="services__grid">
+                <div class="service-card">
+                    <div class="service-card__icon">🤖</div>
+                    <h3 class="service-card__title">AI Therapy Chatbot</h3>
+                    <p class="service-card__description">24/7 available CBT-based conversations with our intelligent AI assistant</p>
+                    <button class="btn btn--outline service-card__btn">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">📊</div>
+                    <h3 class="service-card__title">Mood Tracking & Analytics</h3>
+                    <p class="service-card__description">AI-powered mood pattern analysis to help you understand your mental health trends</p>
+                    <button class="btn btn--outline service-card__btn">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">🚨</div>
+                    <h3 class="service-card__title">Crisis Prevention</h3>
+                    <p class="service-card__description">Real-time risk assessment and immediate support when you need it most</p>
+                    <button class="btn btn--outline service-card__btn">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">📋</div>
+                    <h3 class="service-card__title">Personalized Treatment Plans</h3>
+                    <p class="service-card__description">AI-generated recommendations tailored to your specific mental health needs</p>
+                    <button class="btn btn--outline service-card__btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How AI Helps Section -->
+    <section class="ai-benefits">
+        <div class="container">
+            <h2 class="section-title">How Our AI Technology Supports Your Mental Health</h2>
+            <div class="benefits__grid">
+                <div class="benefit-card">
+                    <div class="benefit-card__icon">⏰</div>
+                    <h3 class="benefit-card__title">Immediate Access</h3>
+                    <p class="benefit-card__description">Get support anytime, anywhere without waiting lists</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-card__icon">🎯</div>
+                    <h3 class="benefit-card__title">Personalized Care</h3>
+                    <p class="benefit-card__description">AI analyzes your patterns to provide tailored interventions</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-card__icon">🛡️</div>
+                    <h3 class="benefit-card__title">Privacy & Comfort</h3>
+                    <p class="benefit-card__description">Share your thoughts in a judgment-free, confidential environment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Chat Preview -->
+    <section id="ai-chat" class="chat-preview">
+        <div class="container">
+            <h2 class="section-title">Try Our AI Assistant</h2>
+            <div class="chat-demo">
+                <div class="chat-demo__messages">
+                    <div class="chat-message chat-message--ai">
+                        <div class="chat-message__content">
+                            Hi! I'm your AI mental health assistant. How are you feeling today?
+                        </div>
+                    </div>
+                    <div class="chat-message chat-message--user">
+                        <div class="chat-message__content">
+                            I've been feeling really anxious lately
+                        </div>
+                    </div>
+                    <div class="chat-message chat-message--ai">
+                        <div class="chat-message__content">
+                            I understand you're feeling anxious. Let's try a quick breathing exercise together...
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-demo__actions">
+                    <button class="btn btn--outline btn--sm" onclick="openQuickAction('anxiety')">Feeling Anxious</button>
+                    <button class="btn btn--outline btn--sm" onclick="openQuickAction('overwhelmed')">Overwhelmed</button>
+                    <button class="btn btn--outline btn--sm" onclick="openQuickAction('sleep')">Can't Sleep</button>
+                    <button class="btn btn--outline btn--sm" onclick="openQuickAction('crisis')">Need Help Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mental Health Resources -->
+    <section id="resources" class="resources">
+        <div class="container">
+            <h2 class="section-title">Mental Health Resources</h2>
+            <div class="resources__grid">
+                <div class="resource-card">
+                    <h3 class="resource-card__title">Self-Assessment Tools</h3>
+                    <p class="resource-card__description">Quick mental health screening questionnaires</p>
+                    <button class="btn btn--primary resource-card__btn" onclick="openAssessment()">Take Assessment</button>
+                </div>
+                <div class="resource-card">
+                    <h3 class="resource-card__title">Coping Strategies Library</h3>
+                    <p class="resource-card__description">Evidence-based techniques for managing stress and anxiety</p>
+                    <button class="btn btn--primary resource-card__btn" onclick="openResources()">View Strategies</button>
+                </div>
+                <div class="resource-card">
+                    <h3 class="resource-card__title">Emergency Resources</h3>
+                    <p class="resource-card__description">Crisis hotlines and immediate support contacts</p>
+                    <button class="btn btn--primary resource-card__btn" onclick="showEmergencyContacts()">Emergency Help</button>
+                </div>
+                <div class="resource-card">
+                    <h3 class="resource-card__title">Mood Tracker</h3>
+                    <p class="resource-card__description">Track your daily mood and identify patterns</p>
+                    <button class="btn btn--primary resource-card__btn" onclick="openMoodTracker()">Track Mood</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & Safety -->
+    <section class="trust-safety">
+        <div class="container">
+            <h2 class="section-title">Your Safety & Privacy</h2>
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <h3>🔒 Data Security</h3>
+                    <p>All conversations are encrypted and confidential</p>
+                </div>
+                <div class="trust-card">
+                    <h3>👨‍⚕️ Professional Oversight</h3>
+                    <p>Licensed mental health professionals review our AI responses</p>
+                </div>
+                <div class="trust-card">
+                    <h3>🚨 Crisis Protocol</h3>
+                    <p>Immediate escalation to human professionals when needed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About MindCare AI</h2>
+            <div class="about__content">
+                <p>MindCare AI combines cutting-edge artificial intelligence with evidence-based mental health practices to provide accessible, immediate support for mental wellness. Our AI is trained on cognitive behavioral therapy (CBT) principles and continuously updated by licensed mental health professionals.</p>
+                <p>We believe that mental health support should be available 24/7, without barriers, and in a safe, non-judgmental environment. Our technology serves as a bridge to professional care while providing immediate coping strategies and emotional support.</p>
+                <p>This website developed by Sanjay Ram CIT CHENNAI</p>
+                <img src="WhatsApp Image 2025-10-08 at 16.37.49_b9a59521.jpg" alt="Sanjay Ram" style="display: block; margin: 2rem auto; max-width: 300px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get Professional Help</h2>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <h3>Emergency Contacts</h3>
+                    <div class="emergency-contacts">
+                        <div class="emergency-contact">
+                            <strong>National Suicide Prevention Lifeline</strong>
+                            <a href="tel:988" class="emergency-number">988</a>
+                        </div>
+                        <div class="emergency-contact">
+                            <strong>Crisis Text Line</strong>
+                            <span class="emergency-number">Text HOME to 741741</span>
+                        </div>
+                        <div class="emergency-contact">
+                            <strong>Emergency Services</strong>
+                            <a href="tel:911" class="emergency-number">911</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__form">
+                    <h3>Book a Consultation</h3>
+                    <form class="consultation-form">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="tel" placeholder="Phone Number">
+                        <select required>
+                            <option value="">Select Service</option>
+                            <option value="therapy">Individual Therapy</option>
+                            <option value="assessment">Mental Health Assessment</option>
+                            <option value="crisis">Crisis Support</option>
+                        </select>
+                        <textarea placeholder="How can we help you?"></textarea>
+                        <button type="submit" class="btn btn--primary">Request Consultation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat Modal -->
+    <div id="chat-modal" class="modal">
+        <div class="modal__content chat-modal__content">
+            <div class="chat-modal__header">
+                <h3>MindCare AI Assistant</h3>
+                <button class="modal__close" id="close-chat">&times;</button>
+            </div>
+            <div class="chat-modal__messages" id="chat-messages">
+                <div class="chat-message chat-message--ai">
+                    <div class="chat-message__content">
+                        Hi! I'm your AI mental health assistant. How are you feeling today?
+                    </div>
+                </div>
+            </div>
+            <div class="chat-modal__input">
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button id="send-message" class="btn btn--primary">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Assessment Modal -->
+    <div id="assessment-modal" class="modal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3>Mental Health Assessment</h3>
+                <button class="modal__close" id="close-assessment">&times;</button>
+            </div>
+            <div class="assessment-content">
+                <div id="assessment-questions"></div>
+                <div id="assessment-results" class="hidden"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mood Tracker Modal -->
+    <div id="mood-modal" class="modal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3>Daily Mood Tracker</h3>
+                <button class="modal__close" id="close-mood">&times;</button>
+            </div>
+            <div class="mood-content">
+                <div class="mood-selector">
+                    <h4>How are you feeling today?</h4>
+                    <div id="mood-options" class="mood-options"></div>
+                </div>
+                <div class="mood-chart">
+                    <h4>Your Mood Trends</h4>
+                    <div id="mood-trends"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resources Modal -->
+    <div id="resources-modal" class="modal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3>Mental Health Resources</h3>
+                <button class="modal__close" id="close-resources">&times;</button>
+            </div>
+            <div id="resources-content" class="resources-modal-content"></div>
+        </div>
+    </div>
+
+    <script src="df.js"></script>
+</body>
+</html>
